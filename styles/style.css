@@ -1,42 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
-body {
+body, input {
   font-family: "Space Mono", monospace;
   font-size: 24px;
+  font-weight: 700;
 }
 
 header h1, header h2 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
 }
 
 label {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 h3 {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 h4 {
-  font-size: 0.72rem;
+  font-size: 0.8rem;
 }
 
 .amount {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 button {
   font-family: "Space Mono", monospace;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
-  font-weight: 700;
 }
 
 .reset {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 * {
@@ -45,42 +45,42 @@ button {
   padding: 0;
 }
 
-body {
+body, input {
   font-family: "Space Mono", monospace;
   font-size: 24px;
+  font-weight: 700;
 }
 
 header h1, header h2 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
 }
 
 label {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 h3 {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 h4 {
-  font-size: 0.72rem;
+  font-size: 0.8rem;
 }
 
 .amount {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 button {
   font-family: "Space Mono", monospace;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
-  font-weight: 700;
 }
 
 .reset {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 body {
@@ -91,79 +91,139 @@ body {
 }
 
 header {
-  margin: 2.2rem auto 0.8rem auto;
-  color: hsl(183deg, 100%, 15%);
+  margin: 2.5rem auto 2rem auto;
 }
 
-.card {
-  margin: 1rem 0 0 0;
-  padding: 1.8rem;
-  border-radius: 1rem;
-  background-color: hsl(0deg, 100%, 100%);
+.cost, .tip, .people {
+  margin-bottom: 1.75rem;
 }
 
-.cost, .people {
-  display: flex;
-  flex-direction: column;
-}
-
-label {
-  margin-bottom: 0.5rem;
-  color: hsl(186deg, 14%, 43%);
-}
-
-button {
-  width: 9.1rem;
-  height: 3rem;
+.tip-grid {
+  margin-top: 0.7rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 1rem;
 }
 
 .output {
   margin-top: 1.8rem;
 }
 
-body {
+body, input {
   font-family: "Space Mono", monospace;
   font-size: 24px;
+  font-weight: 700;
 }
 
 header h1, header h2 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
 }
 
 label {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 h3 {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 h4 {
-  font-size: 0.72rem;
+  font-size: 0.8rem;
 }
 
 .amount {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 button {
   font-family: "Space Mono", monospace;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
-  font-weight: 700;
 }
 
 .reset {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+}
+
+button {
+  height: 3.1rem;
+  border-radius: 0.3rem;
+  border-style: none;
+}
+
+button:hover {
+  background-color: hsl(172deg, 67%, 45%);
+  color: hsl(183deg, 100%, 15%);
+  filter: brightness(120%) contrast(120%);
+}
+
+.tip-button {
+  background-color: hsl(183deg, 100%, 15%);
+  color: hsl(189deg, 41%, 97%);
+}
+
+.reset {
+  width: 100%;
+}
+
+.reset, .selected {
+  background-color: hsl(172deg, 67%, 45%);
+  color: hsl(183deg, 100%, 15%);
+}
+
+header {
+  color: hsl(183deg, 100%, 15%);
+}
+
+label {
+  color: hsl(186deg, 14%, 43%);
+}
+
+#price {
+  background: url("./../../images/icon-dollar.svg") no-repeat 1rem center;
+}
+
+#num-people {
+  background: url("./../../images/icon-person.svg") no-repeat 1rem center;
+}
+
+#price, #num-people, #custom {
+  background-color: hsl(189deg, 41%, 97%);
+}
+
+#custom {
+  height: 3.1rem;
+}
+
+::placeholder {
+  color: hsl(186deg, 14%, 43%);
+}
+
+input[type=text], select {
+  padding: 0 1rem;
+  width: 100%;
+  height: 2.7rem;
+  resize: none;
+  border-style: none;
+  border-radius: 0.3rem;
+  text-align: right;
+  color: hsl(183deg, 100%, 15%);
+}
+
+.main-card {
+  padding: 1.8rem;
+  border-radius: 1.3rem;
+  background-color: hsl(0deg, 100%, 100%);
 }
 
 .output {
   flex-direction: column;
   background-color: hsl(183deg, 100%, 15%);
   border-radius: 0.7rem;
-  padding: 2.2rem 1.5rem 1.3rem 1.5rem;
+  padding: 2.5rem 1.5rem 1.3rem 1.5rem;
 }
 
 .output,
@@ -178,9 +238,13 @@ button {
   justify-content: space-between;
 }
 
+.total-container {
+  padding-bottom: 1rem;
+}
+
 .label-container {
   flex-direction: column;
-  padding-bottom: 1.6rem;
+  padding-bottom: 1.4rem;
 }
 
 h3 {
@@ -193,29 +257,6 @@ h4 {
 
 .amount {
   color: hsl(172deg, 67%, 45%);
-}
-
-button {
-  height: 2.65rem;
-  margin-top: 0.1rem;
-  border-radius: 0.3rem;
-  border-style: none;
-}
-
-.tip-button {
-  width: 8rem;
-  margin-top: 0.7rem;
-  background-color: hsl(183deg, 100%, 15%);
-  color: hsl(189deg, 41%, 97%);
-}
-
-.reset {
-  width: 100%;
-}
-
-.reset, .selected {
-  background-color: hsl(172deg, 67%, 45%);
-  color: hsl(183deg, 100%, 15%);
 }
 
 /*# sourceMappingURL=style.css.map */

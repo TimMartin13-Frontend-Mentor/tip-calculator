@@ -1,0 +1,37 @@
+// Abstracts
+@use "./../abstracts/__abstracts-dir" as ab;
+
+label {
+  color: ab.$dark-grayish-cyan;
+}
+
+#price {
+  background: url("./../../images/icon-dollar.svg") no-repeat 1rem center;
+}
+
+#num-people {
+  background: url("./../../images/icon-person.svg") no-repeat 1rem center;
+}
+
+#price, #num-people, #custom {
+  background-color: ab.$very-light-grayish-cyan;
+}
+
+#custom {
+  height: 3.1rem;
+}
+
+::placeholder {
+  color: ab.$dark-grayish-cyan;
+}
+
+input[type=text], select {
+  padding: 0 1rem;
+  width: 100%;
+  height: 2.7rem;
+  resize: none;
+  border-style: none;
+  border-radius: 0.3rem;
+  text-align: right;
+  color: ab.$very-dark-cyan;
+}

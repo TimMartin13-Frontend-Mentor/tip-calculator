@@ -1,0 +1,6 @@
+// Abstracts
+@use "./../abstracts/__abstracts-dir" as ab;
+
+header {
+  color: ab.$very-dark-cyan;
+}

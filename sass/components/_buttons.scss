@@ -1,0 +1,28 @@
+// Abstracts
+@use "./../abstracts/__abstracts-dir" as ab;
+
+button {
+  height: 3.1rem;
+  border-radius: 0.3rem;
+  border-style: none;
+
+  &:hover {
+    background-color: ab.$strong-cyan;
+    color: ab.$very-dark-cyan;
+    filter: brightness(120%) contrast(120%);
+  }
+}
+
+.tip-button {
+  background-color: ab.$very-dark-cyan;
+  color: ab.$very-light-grayish-cyan;
+}
+
+.reset {
+  width: 100%;
+}
+
+.reset, .selected {
+  background-color: ab.$strong-cyan;
+  color: ab.$very-dark-cyan;
+}

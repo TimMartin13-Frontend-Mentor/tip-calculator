@@ -1,0 +1,8 @@
+// Abstracts
+@use "./../abstracts/__abstracts-dir" as ab;
+
+.main-card {
+  padding: 1.8rem;
+  border-radius: 1.3rem;
+  background-color: ab.$white;
+}

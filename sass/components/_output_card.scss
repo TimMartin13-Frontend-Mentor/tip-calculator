@@ -5,7 +5,7 @@
   flex-direction: column;
   background-color: ab.$very-dark-cyan;
   border-radius: 0.7rem;
-  padding: 2.2rem 1.5rem 1.3rem 1.5rem;
+  padding: 2.5rem 1.5rem 1.3rem 1.5rem;
 }
 
 .output,
@@ -20,9 +20,13 @@
   justify-content: space-between;
 }
 
+.total-container {
+  padding-bottom: 1rem;
+}
+
 .label-container {
   flex-direction: column;
-  padding-bottom: 1.6rem;
+  padding-bottom: 1.4rem;
 }
 
 h3 {
@@ -37,25 +41,3 @@ h4 {
   color: ab.$strong-cyan;
 }
 
-button {
-  height: 2.65rem;
-  margin-top: 0.1rem;
-  border-radius: 0.3rem;
-  border-style: none;
-}
-
-.tip-button {
-  width: 8rem;
-  margin-top: 0.7rem;
-  background-color: ab.$very-dark-cyan;
-  color: ab.$very-light-grayish-cyan;
-}
-
-.reset {
-  width: 100%;
-}
-
-.reset, .selected {
-  background-color: ab.$strong-cyan;
-  color: ab.$very-dark-cyan;
-}

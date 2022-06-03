@@ -20,42 +20,44 @@
     <h2>tter</h2>
   </header>
   <main class="container">
-    <div class="card">
+    <div class="main-card">
       <section class="input">
         <div class="cost">
-          <label for="price">Bill</label>
-          <textarea id="price"></textarea>
+          <label for="price">Bill</label><br>
+          <input type="text" id="price" name="price" placeholder="0"></input>
         </div>
         <div class="tip">
           <label for="tip-percent">Select Tip %</label>
-          <div>
+          <div class="tip-grid">
             <button class="tip-button">5%</button>
             <button class="tip-button">10%</button>
             <button class="tip-button">15%</button>
             <button class="tip-button">25%</button>
             <button class="tip-button">50%</button>
-            <button class="tip-button">Custom</button>
+            <input type="text" id="custom" name="custom" placeholder="Custom"></input>
           </div>
         </div>
         <div class="people">
           <label for="num-people">Number of People</label>
-          <textarea id="num-people"></textarea>
+          <input type="text" id="num-people" name="num-people" placeholder="0"></input>
         </div>
       </section>
       <section class="output">
-        <div class="tip-container">
-          <div class="label-container">
-            <h3>Tip Amount</h3>
-            <h4>/ person</h4>
+        <div class="tip-total-container">
+          <div class="tip-container">
+            <div class="label-container">
+              <h3>Tip Amount</h3>
+              <h4>/ person</h4>
+            </div>
+            <div class="amount">$4.27</div>
           </div>
-          <div class="amount">$4.27</div>
-        </div>
-        <div class="total-container">
-          <div class="label-container">
-            <h3>Total</h3>
-            <h4>/ person</h4>
+          <div class="total-container">
+            <div class="label-container">
+              <h3>Total</h3>
+              <h4>/ person</h4>
+            </div>
+            <div class="amount">$32.79</div>
           </div>
-          <div class="amount">$32.79</div>
         </div>
         <button class="reset">Reset</button>
       </section>
