@@ -7,9 +7,8 @@ button {
   border-style: none;
 
   &:hover {
-    background-color: ab.$strong-cyan;
+    background-color: ab.$weak-cyan;
     color: ab.$very-dark-cyan;
-    filter: brightness(120%) contrast(120%);
   }
 }
 

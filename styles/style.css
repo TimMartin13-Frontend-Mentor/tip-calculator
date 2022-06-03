@@ -155,9 +155,8 @@ button {
 }
 
 button:hover {
-  background-color: hsl(172deg, 67%, 45%);
+  background-color: hsl(172deg, 67%, 75%);
   color: hsl(183deg, 100%, 15%);
-  filter: brightness(120%) contrast(120%);
 }
 
 .tip-button {
@@ -186,6 +185,13 @@ label {
   background: url("./../../images/icon-dollar.svg") no-repeat 1rem center;
 }
 
+.people-label-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 0.4rem;
+}
+
 #num-people {
   background: url("./../../images/icon-person.svg") no-repeat 1rem center;
 }
@@ -202,15 +208,23 @@ label {
   color: hsl(186deg, 14%, 43%);
 }
 
-input[type=text], select {
+input[type=text], .select {
   padding: 0 1rem;
   width: 100%;
-  height: 2.7rem;
+  height: 2.9rem;
   resize: none;
   border-style: none;
   border-radius: 0.3rem;
   text-align: right;
   color: hsl(183deg, 100%, 15%);
+}
+
+input[type=text]:focus, .select:focus {
+  outline: 2px solid hsl(172deg, 67%, 45%);
+}
+
+.error-text {
+  color: #B77D72;
 }
 
 .main-card {
