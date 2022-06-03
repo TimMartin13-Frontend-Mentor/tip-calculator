@@ -1,20 +1,18 @@
-// const requestUrl = 'https://api.adviceslip.com/advice';
+const billPrice = document.querySelector("#price");
+const customPercent = document.querySelector("#custom");
+const numOfPeople = document.querySelector("#num-people");
+const resetBtn = document.querySelector(".reset");
+const taxAmount = document.querySelector(".tax");
+let totalAmount = document.querySelector(".total");
 
-// const card = document.querySelector(".card");
-// const adviceNumber = document.querySelector(".advice-number");
-// const adviceText = document.querySelector(".advice-text");
-// const adviceBtn = document.querySelector(".advice-btn");
+const calculatePerPerson = () => {
+  
+  numOfPeople.value = 1;
+  totalAmount.textContent = billPrice.value / numOfPeople.value;
 
+}
 
-// const getAdvice = () => {
-//   fetch(requestUrl)
-//     .then(response => response.json())
-//     .then(data => 
-//       {
-//         adviceNumber.innerHTML = data.slip.id;
-//         adviceText.innerHTML = data.slip.advice;
-//       });
-// }
+billPrice.addEventListener('keyup', calculatePerPerson);
+numOfPeople.addEventListener('keyup', calculatePerPerson);
 
-// adviceBtn.addEventListener('click', getAdvice);
   

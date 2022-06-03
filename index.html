@@ -40,7 +40,7 @@
         <div class="people">
           <div class="people-label-container">
             <label for="num-people">Number of People</label>
-            <h3 class="error-text">Can't be zero</h3>
+            <h3 class="error-text hide">Can't be zero</h3>
           </div>
           <input type="text" id="num-people" name="num-people" placeholder="0"></input>
         </div>
@@ -52,14 +52,14 @@
               <h3>Tip Amount</h3>
               <h4>/ person</h4>
             </div>
-            <div class="amount">$4.27</div>
+            <div class="amount">$<span class="tax">4.27</span></div>
           </div>
           <div class="total-container">
             <div class="label-container">
               <h3>Total</h3>
               <h4>/ person</h4>
             </div>
-            <div class="amount">$32.79</div>
+            <div class="amount">$<span class="total">32.79</span></div>
           </div>
         </div>
         <button class="reset">Reset</button>

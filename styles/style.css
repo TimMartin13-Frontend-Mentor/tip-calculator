@@ -227,6 +227,10 @@ input[type=text]:focus, .select:focus {
   color: #B77D72;
 }
 
+.hide {
+  display: none;
+}
+
 .main-card {
   padding: 1.8rem;
   border-radius: 1.3rem;
