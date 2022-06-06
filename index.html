@@ -14,7 +14,7 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body onload="initializeInputs()">
   <header>
     <h1>Spli</h1>
     <h2>tter</h2>
@@ -24,25 +24,25 @@
       <section class="input">
         <div class="cost">
           <label for="price">Bill</label><br>
-          <input type="text" id="price" name="price" placeholder="0"></input>
+          <input type="text" id="price" name="price" placeholder="0" maxlength="8" type="number"></input>
         </div>
         <div class="tip">
           <label for="tip-percent">Select Tip %</label>
           <div class="tip-grid">
-            <button class="tip-button">5%</button>
-            <button class="tip-button">10%</button>
-            <button class="tip-button">15%</button>
-            <button class="tip-button">25%</button>
-            <button class="tip-button">50%</button>
-            <input type="text" id="custom" name="custom" placeholder="Custom"></input>
+            <button class="tip-button five">5%</button>
+            <button class="tip-button" data-tip="10">10%</button>
+            <button class="tip-button" data-tip="15">15%</button>
+            <button class="tip-button" data-tip="25">25%</button>
+            <button class="tip-button" data-tip="50">50%</button>
+            <input type="text" id="custom" name="custom" placeholder="Custom" maxlength="5"></input>
           </div>
         </div>
         <div class="people">
           <div class="people-label-container">
             <label for="num-people">Number of People</label>
-            <h3 class="error-text hide">Can't be zero</h3>
+            <h3 class="error-text hide">Minimum: 1</h3>
           </div>
-          <input type="text" id="num-people" name="num-people" placeholder="0"></input>
+          <input type="text" id="num-people" name="num-people" placeholder="1" maxlength="8"></input>
         </div>
       </section>
       <section class="output">
@@ -52,14 +52,14 @@
               <h3>Tip Amount</h3>
               <h4>/ person</h4>
             </div>
-            <div class="amount">$<span class="tax">4.27</span></div>
+            <div class="amount tip-amount">$0.00</div>
           </div>
           <div class="total-container">
             <div class="label-container">
               <h3>Total</h3>
               <h4>/ person</h4>
             </div>
-            <div class="amount">$<span class="total">32.79</span></div>
+            <div class="amount total-amount">$0.00</div>
           </div>
         </div>
         <button class="reset">Reset</button>
