@@ -127,6 +127,7 @@ const initializeInputs = () => {
 
   price = billPrice.value;
   people = peopleNumber.value;
+  tipValue = tipValue ? tipValue : 0;
 
   // Logs to confirm variables are there
   console.log("Price: ", price);
