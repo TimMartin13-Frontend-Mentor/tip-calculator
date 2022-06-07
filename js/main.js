@@ -135,3 +135,5 @@ const initializeInputs = () => {
 
   calculateTip();
 }
+
+initializeInputs();
