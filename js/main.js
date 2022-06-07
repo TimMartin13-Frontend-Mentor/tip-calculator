@@ -82,6 +82,7 @@ tips.forEach(function(val) {
 const calculateTip = () => {
   if (people >= 1) {
     errorText.classList.add('hide');
+    peopleNumber.classList.remove('error');
     let tipAmount = (price * tipValue) / people;
     let totalAmount = (price / people) + tipAmount;
     tipPerPerson.innerHTML = `$${ tipAmount.toFixed(2) }`;
@@ -90,6 +91,7 @@ const calculateTip = () => {
   else {
     // Display error if less than 1 person
     errorText.classList.remove('hide');
+    peopleNumber.classList.add('error');
   }
 }
 

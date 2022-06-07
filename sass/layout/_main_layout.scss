@@ -28,9 +28,47 @@ header {
   margin-top: 1.8rem;
 }
 
-// @media (min-width: 600px){  
-//   .card {
-//     margin: 13.94rem auto 0 auto;
-//     max-width: 33.75rem;
-//   }
-// }
+@media (min-width: 900px){  
+  header {
+    margin: 10.125rem auto 5.56rem auto;
+  }
+
+  .container {
+    margin: 0 auto 10rem auto;
+    max-width: 57.5rem;
+  }
+
+  .input, .output {
+    width: 50%;
+  }
+
+  .output {
+    margin: 0;
+    
+  }
+
+  .input {
+    margin: 0 0 0 1rem;
+    padding-right: 2.9rem;
+  }
+
+  .tip-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+  }
+
+  .cost, .tip {
+    margin-bottom: 2rem;
+  }
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center;
+  padding: 1rem; 
+}
+
+.attribution a { 
+  color: ab.$strong-cyan; 
+}

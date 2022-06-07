@@ -18,10 +18,11 @@
 .tip-container, .total-container {
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .total-container {
-  padding-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .label-container {
@@ -41,3 +42,17 @@ h4 {
   color: ab.$strong-cyan;
 }
 
+@media (min-width: 900px){  
+  .output {
+    justify-content: space-between;
+    padding: 2.5rem;
+  }
+
+  .tip-container {
+    margin-bottom: 1rem;
+  }
+
+  .label-container {
+    padding-bottom: 0;
+  }
+}

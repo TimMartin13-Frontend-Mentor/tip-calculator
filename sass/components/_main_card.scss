@@ -2,7 +2,17 @@
 @use "./../abstracts/__abstracts-dir" as ab;
 
 .main-card {
+  display: flex;
+  flex-direction: column;
   padding: 1.8rem;
   border-radius: 1.3rem;
   background-color: ab.$white;
+}
+
+@media (min-width: 900px){  
+  .main-card {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2.1rem;
+  }
 }

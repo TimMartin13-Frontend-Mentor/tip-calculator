@@ -39,6 +39,15 @@ button {
   font-size: 1.2rem;
 }
 
+@media (min-width: 600px) {
+  .amount {
+    font-size: 3rem;
+  }
+
+  #custom {
+    font-size: 1.4rem;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -83,6 +92,15 @@ button {
   font-size: 1.2rem;
 }
 
+@media (min-width: 600px) {
+  .amount {
+    font-size: 3rem;
+  }
+
+  #custom {
+    font-size: 1.4rem;
+  }
+}
 body {
   display: flex;
   flex-direction: column;
@@ -108,6 +126,49 @@ header {
 
 .output {
   margin-top: 1.8rem;
+}
+
+@media (min-width: 900px) {
+  header {
+    margin: 10.125rem auto 5.56rem auto;
+  }
+
+  .container {
+    margin: 0 auto 10rem auto;
+    max-width: 57.5rem;
+  }
+
+  .input, .output {
+    width: 50%;
+  }
+
+  .output {
+    margin: 0;
+  }
+
+  .input {
+    margin: 0 0 0 1rem;
+    padding-right: 2.9rem;
+  }
+
+  .tip-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+  }
+
+  .cost, .tip {
+    margin-bottom: 2rem;
+  }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 1rem;
+}
+
+.attribution a {
+  color: hsl(172deg, 67%, 45%);
 }
 
 body, input {
@@ -148,6 +209,15 @@ button {
   font-size: 1.2rem;
 }
 
+@media (min-width: 600px) {
+  .amount {
+    font-size: 3rem;
+  }
+
+  #custom {
+    font-size: 1.4rem;
+  }
+}
 button {
   height: 3.1rem;
   border-radius: 0.3rem;
@@ -231,12 +301,25 @@ input[type=text]:focus, .select:focus {
   display: none;
 }
 
+.error {
+  outline: 2px solid #B77D72;
+}
+
 .main-card {
+  display: flex;
+  flex-direction: column;
   padding: 1.8rem;
   border-radius: 1.3rem;
   background-color: hsl(0deg, 100%, 100%);
 }
 
+@media (min-width: 900px) {
+  .main-card {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2.1rem;
+  }
+}
 .output {
   flex-direction: column;
   background-color: hsl(183deg, 100%, 15%);
@@ -254,10 +337,11 @@ input[type=text]:focus, .select:focus {
 .tip-container, .total-container {
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .total-container {
-  padding-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .label-container {
@@ -275,6 +359,21 @@ h4 {
 
 .amount {
   color: hsl(172deg, 67%, 45%);
+}
+
+@media (min-width: 900px) {
+  .output {
+    justify-content: space-between;
+    padding: 2.5rem;
+  }
+
+  .tip-container {
+    margin-bottom: 1rem;
+  }
+
+  .label-container {
+    padding-bottom: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
