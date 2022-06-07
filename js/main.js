@@ -128,5 +128,10 @@ const initializeInputs = () => {
   price = billPrice.value;
   people = peopleNumber.value;
 
+  // Logs to confirm variables are there
+  console.log("Price: ", price);
+  console.log("People: ", people);
+  console.log("TipValue", tipValue);
+
   calculateTip();
 }
